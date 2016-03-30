@@ -66,7 +66,7 @@ public:
 	static void MAFPlantScheduler_PLANT(void)
 	{
 		ads_name sset; //the selection set
-		long sslen = 0;
+		Int32 sslen = 0;
 		wchar_t str[100];
 		struct resbuf eb1; //vars for filtering the selection set
 		wchar_t sbuf1[100];
@@ -487,7 +487,7 @@ private:
 
 	static void extract_data(ads_name sset, std::map<std::wstring, int> * plants)
 	{
-		long sslen;
+		Int32 sslen;
 		int i;
 		ads_name entname;
 		AcDbEntity * pEnt;
