@@ -1,0 +1,10 @@
+8,,,,,,,,,,
+Tree,1,,,,,,,,,
+Shrub,2,,,,,,,,,
+Ground Cover,3,,,,,,,,,
+Tufting,4,,,,,,,,,
+Climber,5,,,,,,,,,
+Ferns,6,,,,,,,,,
+Wetland,7,,,,,,,,,
+Aquatic,8,,,,,,,,,
+A-Code,BotanicName,CommonName,planttype,MatureHt,MatureWd,AustralianNative,Deciduous,PotSize,InstallSp,InstallHt
