@@ -39,7 +39,7 @@
     <UseOfAtl>false</UseOfAtl>
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>false</CLRSupport>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -47,7 +47,7 @@
     <UseOfAtl>false</UseOfAtl>
     <CharacterSet>Unicode</CharacterSet>
     <CLRSupport>false</CLRSupport>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -206,7 +206,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)plantMakr.arx</OutputFile>
+      <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\plantMakr.arx</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\lib\boost\lib\w32\lib;..\..\..\lib\ObjectARX\lib-win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkDLL>true</LinkDLL>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -246,7 +246,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)plantMakr-x64.arx</OutputFile>
+      <OutputFile>$(SolutionDir)$(Platform)\$(Configuration)\plantMakr-x64.arx</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\lib\boost\lib\x64\lib;..\..\..\lib\ObjectARX\lib-x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkDLL>true</LinkDLL>
       <GenerateDebugInformation>false</GenerateDebugInformation>
