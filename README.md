@@ -21,8 +21,9 @@ Build Steps:
   #  define STLSOFT_COMPILER_VERSION_STRING       "Visual C++ 14.1"
   ~~~
   3. Build boost libraries (x64 and w32 versions). 
-    - .\bootstrap.bat --with-libraries=regex
-    - .\b2 --toolset=msvc-14.1 address-model=64 --with-regex --build-type=complete --stagedir=lib\x64 stage
-    - .\b2 --toolset=msvc-14.1 --build-type=complete --with-regex --stagedir=lib\w32 stage
+  ```
+    .\bootstrap.bat --with-libraries=regex
+    .\b2 --toolset=msvc-14.2 address-model=64 --with-regex --build-type=complete --stagedir=lib\x64 stage
+  ```
   4. Open the project in Visual Studio
   5. Build the project for the desired architecture.
