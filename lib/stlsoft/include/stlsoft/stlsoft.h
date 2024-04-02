@@ -6,10 +6,11 @@
  *              types.
  *
  * Created:     15th January 2002
- * Updated:     13th October 2019
+ * Updated:     13th December 2023
  *
  * Home:        http://stlsoft.org/
  *
+ * Copyright (c) 2019-2023, Matthew Wilson and Synesis Information Systems
  * Copyright (c) 2002-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
@@ -22,9 +23,10 @@
  * - Redistributions in binary form must reproduce the above copyright
  *   notice, this list of conditions and the following disclaimer in the
  *   documentation and/or other materials provided with the distribution.
- * - Neither the name(s) of Matthew Wilson and Synesis Software nor the
- *   names of any contributors may be used to endorse or promote products
- *   derived from this software without specific prior written permission.
+ * - Neither the name(s) of Matthew Wilson and Synesis Information Systems
+ *   nor the names of any contributors may be used to endorse or promote
+ *   products derived from this software without specific prior written
+ *   permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
  * IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
@@ -53,9 +55,9 @@
 /* File version */
 #ifndef STLSOFT_DOCUMENTATION_SKIP_SECTION
 # define STLSOFT_VER_STLSOFT_H_STLSOFT_MAJOR    3
-# define STLSOFT_VER_STLSOFT_H_STLSOFT_MINOR    46
-# define STLSOFT_VER_STLSOFT_H_STLSOFT_REVISION 9
-# define STLSOFT_VER_STLSOFT_H_STLSOFT_EDIT     506
+# define STLSOFT_VER_STLSOFT_H_STLSOFT_MINOR    51
+# define STLSOFT_VER_STLSOFT_H_STLSOFT_REVISION 10
+# define STLSOFT_VER_STLSOFT_H_STLSOFT_EDIT     537
 #else /* ? STLSOFT_DOCUMENTATION_SKIP_SECTION */
 /* # include "./internal/doxygen_defs.h" */
 #endif /* !STLSOFT_DOCUMENTATION_SKIP_SECTION */
@@ -315,12 +317,32 @@
 # define _STLSOFT_VER_1_10_1_B14    0x010a018e  /*!< Version 1.10.1 beta 14 (4th August 2019) */
 # define _STLSOFT_VER_1_10_1_B15    0x010a018f  /*!< Version 1.10.1 beta 15 (13th September 2019) */
 # define _STLSOFT_VER_1_10_1_B16    0x010a0190  /*!< Version 1.10.1 beta 16 (13th October 2019) */
+# define _STLSOFT_VER_1_10_1_B17    0x010a0191  /*!< Version 1.10.1 beta 17 (24th October 2019) */
+# define _STLSOFT_VER_1_10_1_B18    0x010a0192  /*!< Version 1.10.1 beta 18 (31st October 2019) */
+# define _STLSOFT_VER_1_10_1_B19    0x010a0193  /*!< Version 1.10.1 beta 19 (4th July 2020) */
+# define _STLSOFT_VER_1_10_1_B20    0x010a0194  /*!< Version 1.10.1 beta 20 (5th July 2020) */
+# define _STLSOFT_VER_1_10_1_B21    0x010a0195  /*!< Version 1.10.1 beta 21 (27th July 2020) */
+# define _STLSOFT_VER_1_10_1_B22    0x010a0196  /*!< Version 1.10.1 beta 22 (29th November 2020) */
+# define _STLSOFT_VER_1_10_1_B23    0x010a0197  /*!< Version 1.10.1 beta 23 (13th December 2020) */
+# define _STLSOFT_VER_1_10_1_B24    0x010a0198  /*!< Version 1.10.1 beta 24 (13th December 2020) */
+# define _STLSOFT_VER_1_10_1_B25    0x010a0199  /*!< Version 1.10.1 beta 25 (14th December 2020) */
+# define _STLSOFT_VER_1_10_1_B26    0x010a019a  /*!< Version 1.10.1 beta 26 (18th December 2020) */
+# define _STLSOFT_VER_1_10_1_B27    0x010a019b  /*!< Version 1.10.1 beta 27 (11th January 2021) */
+# define _STLSOFT_VER_1_10_1_B28    0x010a019c  /*!< Version 1.10.1 beta 28 (18th January 2021) */
+# define _STLSOFT_VER_1_10_1_B29    0x010a019d  /*!< Version 1.10.1 beta 29 (26th January 2021) */
+# define _STLSOFT_VER_1_10_1_B30    0x010a019e  /*!< Version 1.10.1 beta 30 (29th March 2021) */
+# define _STLSOFT_VER_1_10_1_B31    0x010a019f  /*!< Version 1.10.1 beta 31 (2nd April 2021) */
+# define _STLSOFT_VER_1_10_1_B32    0x010a01a0  /*!< Version 1.10.1 beta 32 (26th April 2021) */
+# define _STLSOFT_VER_1_10_1_B33    0x010a01a1  /*!< Version 1.10.1 beta 33 (26th April 2021) */
+# define _STLSOFT_VER_1_10_1_B34    0x010a01a2  /*!< Version 1.10.1 beta 34 (26th April 2021) */
+# define _STLSOFT_VER_1_10_1_B35    0x010a01a3  /*!< Version 1.10.1 beta 35 (1st December 2023) */
+# define _STLSOFT_VER_1_10_1        0x010a01ff  /*!< Version 1.10.1 (13th December 2023) */
 #endif /* !STLSOFT_DOCUMENTATION_SKIP_SECTION */
 
 #define _STLSOFT_VER_MAJOR      1
 #define _STLSOFT_VER_MINOR      10
 #define _STLSOFT_VER_REVISION   1
-#define _STLSOFT_VER            _STLSOFT_VER_1_10_1_B16
+#define _STLSOFT_VER            _STLSOFT_VER_1_10_1
 
 /* /////////////////////////////////////
  * underlying version detection
@@ -373,6 +395,25 @@
 # define STLSOFT_PP_PASTE_2_TOKENS(t1, t2)                  t1 ## t2
 # define STLSOFT_PP_PASTE_3_TOKENS(t1, t2, t3)              t1 ## t2 ## t3
 
+/* #pragma message-compatible file+line quoting */
+
+# if 0
+# elif defined(_MSC_VER)
+
+#  define STLSOFT_FILELINE_PREFIX_                          __FILE__ "(" STLSOFT_STRINGIZE( __LINE__ ) "): "
+# else
+
+#  define STLSOFT_FILELINE_PREFIX_                          __FILE__ ":" STLSOFT_STRINGIZE( __LINE__ ) ": "
+# endif
+
+# if 0
+# elif defined(__clang__)
+
+#  define STLSOFT_FILELINE_MESSAGE(msg)                     STLSOFT_FILELINE_PREFIX_ "" msg ""
+# else
+
+#  define STLSOFT_FILELINE_MESSAGE(msg)                     STLSOFT_FILELINE_PREFIX_ ## "" msg ""
+# endif
 #endif /* !STLSOFT_DOCUMENTATION_SKIP_SECTION */
 
 /* /////////////////////////////////////////////////////////////////////////
@@ -492,7 +533,7 @@
 # if __clang_major__ < 3
 #  error Only versions 3.0 and later of Clang C/C++ compiler is supported by the STLSoft libraries
 # else /* ? __COMO_VERSION__ */
-#  define STLSOFT_COMPILER_VERSION_STRING       "Clang " ## __clang_version__
+#  define STLSOFT_COMPILER_VERSION_STRING       "Clang " STLSOFT_STRINGIZE(__clang_major__) "." STLSOFT_STRINGIZE(__clang_minor__) "." STLSOFT_STRINGIZE(__clang_patchlevel__)
 # endif /* __COMO_VERSION__ */
 
 #elif defined(__COMO__) /* Do Comeau next, so that no Comeau back-end server compilers are preferentially discriminated */
@@ -563,10 +604,11 @@
  /* ******************************** GCC ******************************** */
 # define STLSOFT_COMPILER_IS_GCC
 # define STLSOFT_COMPILER_LABEL_STRING          "GNU C/C++"
-# if __GNUC__ != 2 && \
-     __GNUC__ != 3 && \
-     __GNUC__ != 4
-#  error GNU C/C++ compilers whose major version is not 2, 3 or 4 are not currently supported by the STLSoft libraries
+# if 0 || \
+     __GNUC__ < 2 || \
+     __GNUC__ > 9 && \
+     0
+#  error GNU C/C++ compilers whose major version is not in the range 2-9 are not currently supported by the STLSoft libraries
 # elif __GNUC__ == 2
 #  if __GNUC_MINOR__ < 95
 #   error Currently only version 2.95 and above of the GNU C/C++ compiler is supported by the STLSoft libraries
@@ -587,12 +629,14 @@
 #  else /* ? __GNUC_MINOR__ */
 #   define STLSOFT_COMPILER_VERSION_STRING      "GNU C/C++ >3.4 - you should be aware that this version may not be supported correctly"
 #  endif /* __GNUC_MINOR__  */
-# elif __GNUC__ == 0
+# elif __GNUC__ == 4
 #  if __GNUC_MINOR__ == 0
 #   define STLSOFT_COMPILER_VERSION_STRING      "GNU C/C++ 4.0"
 #  else /* ? __GNUC_MINOR__ */
 #   define STLSOFT_COMPILER_VERSION_STRING      "GNU C/C++ >4.0 - you should be aware that this version may not be supported correctly"
 #  endif /* __GNUC__  */
+# else
+#   define STLSOFT_COMPILER_VERSION_STRING      "GNU C/C++ " STLSOFT_STRINGIZE(__GNUC__) "." STLSOFT_STRINGIZE(__GNUC_MINOR__)
 # endif /* __GNUC_MINOR__ */
 
 #elif defined(__INTEL_COMPILER)
@@ -729,12 +773,19 @@
 #  define STLSOFT_COMPILER_VERSION_STRING       "Visual C++ 12.0"
 # elif (_MSC_VER == 1900)
 #  define STLSOFT_COMPILER_VERSION_STRING       "Visual C++ 14.0"
-# elif ((_MSC_VER & 0xFFF0) == 0x1910)
-#  define STLSOFT_COMPILER_VERSION_STRING       "Visual C++ 14.1x"
-# elif ((_MSC_VER  >= 1920) && (_MSC_VER  <= 1929))
-#  define STLSOFT_COMPILER_VERSION_STRING       "Visual C++ 14.2x"
+# elif _MSC_VER >= 1910
+#  if 0
+#  elif _MSC_VER < 1920
+#   define STLSOFT_COMPILER_VERSION_STRING      "Visual C++ 15.x"
+#  elif _MSC_VER <= 1929
+#   define STLSOFT_COMPILER_VERSION_STRING      "Visual C++ 16.x"
+#  elif _MSC_VER <= 1939
+#   define STLSOFT_COMPILER_VERSION_STRING      "Visual C++ 17.x"
+#  else
+#   error Visual C++ version that is >= vc16 is not recognised
+#  endif
 # else /* ? _MSC_VER */
-#  error Currently only versions 5.0, 6.0, 7.0, 7.1, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, 14.1x and 14.2x of the Visual C++ compiler are supported by the STLSoft libraries
+#  error Currently only versions 5.0, 6.0, 7.0, 7.1, 8.0, 9.0, 10.0, 11.0, 12.0, 14.0, and 14.1x of the Visual C++ compiler are supported by the STLSoft libraries
 # endif /* _MSC_VER */
 
 #else /* ? compiler */
@@ -825,14 +876,8 @@
 # error Compiler not correctly discriminated
 #endif /* compiler */
 
-/* pragma message support */
-
-/* backwards-compatibility : _STLSOFT_COMPILE_VERBOSE => STLSOFT_COMPILE_VERBOSE */
-
-#if defined(_STLSOFT_COMPILE_VERBOSE) && \
-    !defined(STLSOFT_COMPILE_VERBOSE)
-# define STLSOFT_COMPILE_VERBOSE
-#endif
+/* #pragma message support
+ */
 
 /* backwards-compatibility : STLSOFT_CF_PRAGMA_MESSAGE_SUPPORT => STLSOFT_PPF_pragma_message_SUPPORT */
 #if defined(STLSOFT_CF_PRAGMA_MESSAGE_SUPPORT) && \
@@ -840,10 +885,24 @@
 # define STLSOFT_PPF_pragma_message_SUPPORT
 #endif
 
+/* verbose compilation:
+ */
+
+  /* backwards-compatibility : _STLSOFT_COMPILE_VERBOSE => STLSOFT_COMPILE_VERBOSE */
+
+#if defined(_STLSOFT_COMPILE_VERBOSE) && \
+    !defined(STLSOFT_COMPILE_VERBOSE)
+# define STLSOFT_COMPILE_VERBOSE
+#endif
+
+  /* feature-constraint : !STLSOFT_PPF_pragma_message_SUPPORT => !STLSOFT_COMPILE_VERBOSE */
+
 #if defined(STLSOFT_COMPILE_VERBOSE) && \
     !defined(STLSOFT_PPF_pragma_message_SUPPORT)
 # undef STLSOFT_COMPILE_VERBOSE
 #endif /* !STLSOFT_PPF_pragma_message_SUPPORT && STLSOFT_COMPILE_VERBOSE */
+
+  /* feature-flag : STLSOFT_NO_COMPILE_VERBOSE => !STLSOFT_COMPILE_VERBOSE */
 
 #if defined(STLSOFT_NO_COMPILE_VERBOSE) && \
     defined(STLSOFT_COMPILE_VERBOSE)
@@ -855,7 +914,7 @@
 #endif /* STLSOFT_COMPILE_VERBOSE */
 
 
-/* backwards-compatibility : STLSOFT_COMPILE_VERBOSE => _STLSOFT_COMPILE_VERBOSE */
+  /* backwards-compatibility : STLSOFT_COMPILE_VERBOSE => _STLSOFT_COMPILE_VERBOSE */
 
 #if defined(STLSOFT_COMPILE_VERBOSE)
 # if defined(_STLSOFT_COMPILE_VERBOSE)
@@ -1321,6 +1380,39 @@
 #endif /* sub-project versions */
 
 /* /////////////////////////////////////////////////////////////////////////
+ * deprecation
+ */
+
+#ifndef STLSOFT_OBSOLETE
+
+# if 0
+# elif defined(__cplusplus) && \
+       __cplusplus >= 201402L
+
+#  define STLSOFT_DEPRECATED_(msg)                          [[deprecated(msg)]]
+# elif 0 || \
+       defined(__GNUC__) || \
+       defined(__clang__) || \
+       0
+
+#  define STLSOFT_DEPRECATED_(msg)                          __attribute__((deprecated))
+# elif defined(_MSC_VER) && \
+     (   _MSC_VER >= 1500 || \
+         (   _MSC_VER >= 1400 && \
+             defined(_MSC_FULL_VER) && \
+             _MSC_FULL_VER >= 140050320))
+
+#  define STLSOFT_DEPRECATED_(msg)                          __declspec(deprecated(msg))
+# else
+
+#  define STLSOFT_DEPRECATED_(msg)                          /* */
+# endif
+#else
+
+# define STLSOFT_DEPRECATED_(msg)                           /* */
+#endif /* STLSOFT_OBSOLETE */
+
+/* /////////////////////////////////////////////////////////////////////////
  * includes
  */
 
@@ -1493,7 +1585,7 @@
        (    defined(STLSOFT_COMPILER_IS_GCC) && \
             STLSOFT_GCC_VER >= 40800) || \
        0
-       
+
 #  define STLSOFT_STATIC_ASSERT(expr)                       do { typedef int ai[(expr) ? 1 : -1] __attribute__((unused)); } while(0)
 # elif 0 || \
      defined(STLSOFT_COMPILER_IS_CLANG) || \
@@ -1846,13 +1938,17 @@ namespace stlsoft
  */
 #if !defined(STLSOFT_DOCUMENTATION_SKIP_SECTION) && \
     !defined(STLSOFT_NO_NAMESPACES)
+
 # define STLSOFT_OPEN_WORKER_NS_(ns)                        namespace ns {
 # define STLSOFT_CLOSE_WORKER_NS_(ns)                       }
 # define STLSOFT_WORKER_NS_QUAL_(ns, x)                     ns::x
+# define STLSOFT_WORKER_NS_USING_(ns, x)                    using ns::x;
 #else /* ? namespaces supported */
+
 # define STLSOFT_OPEN_WORKER_NS_(ns)
 # define STLSOFT_CLOSE_WORKER_NS_(ns)
 # define STLSOFT_WORKER_NS_QUAL_(ns, x)                     x
+# define STLSOFT_WORKER_NS_USING_(ns, x)
 #endif /* namespaces supported */
 
 /* /////////////////////////////////////////////////////////////////////////
@@ -2462,6 +2558,29 @@ throw_x(
 # define STLSOFT_NOEXCEPT                                   stlsoft_throw_0()
 #endif
 
+
+/** \def STLSOFT_NOEXCEPT_STDOVR
+ *
+ * Function decorator that denotes the semantic of the \c noexcept
+ *   keyword / <code>throw()</code> construct in a compiler-independent
+ *   manner that is applied to functions that are (ultimately) overrides of
+ *   standard library virtual functions.
+ */
+#if 0
+#elif defined(STLSOFT_DOCUMENTATION_SKIP_SECTION)
+
+# define STLSOFT_NOEXCEPT_STDOVR                            noexcept
+#elif !defined(__cplusplus)
+
+#elif defined(_GLIBCXX_USE_NOEXCEPT)
+
+# define STLSOFT_NOEXCEPT_STDOVR                            _GLIBCXX_USE_NOEXCEPT
+#else
+
+# define STLSOFT_NOEXCEPT_STDOVR                            STLSOFT_NOEXCEPT
+#endif
+
+
 /* /////////////////////////////////////////////////////////////////////////
  * array size determination macro(s)
  */
@@ -2765,7 +2884,7 @@ private:
         __GNUC_MINOR__ >= 3 && \
         !defined(__APPLE__))
 
-  /* This version of the technique for GCC 3.3+ was suggested by Lars Rune N�stdal,
+  /* This version of the technique for GCC 3.3+ was suggested by Lars Rune Nøstdal,
    * from Norway. Many thanks, Lars!
    */
 
@@ -3027,12 +3146,13 @@ inline void stlsoft_suppress_unused_func(size_t )
 
 # define STLSOFT_INLINE                                     inline
 #else /* ? __cplusplus */
-# if defined(STLSOFT_CF_C99_INLINE)
-
-#  define STLSOFT_INLINE                                    inline
+# if 0
 # elif defined(STLSOFT_CUSTOM_C_INLINE)
 
 #  define STLSOFT_INLINE                                    STLSOFT_CUSTOM_C_INLINE
+# elif defined(STLSOFT_CF_C99_INLINE)
+
+#  define STLSOFT_INLINE                                    inline
 # else /* ? C inline */
 
 #  define STLSOFT_INLINE                                    static
@@ -3350,7 +3470,7 @@ operator new(
 #endif /* !STLSOFT_NO_NAMESPACE */
 
 /* /////////////////////////////////////////////////////////////////////////
- * inclusion
+ * inclusion control
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
