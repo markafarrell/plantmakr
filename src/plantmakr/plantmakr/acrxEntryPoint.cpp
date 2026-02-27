@@ -348,8 +348,8 @@ private:
 		vole::object range4 = excelApp.get_property<vole::object>(L"Range", "G4");
 		range4.put_property(L"Formula", "Supplied Height");
 
-		vole::object range6 = excelApp.get_property<vole::object>(L"Range", "G4");
-		range6.put_property(L"Formula", "Indicative Mature Height x Spread");
+		vole::object range7 = excelApp.get_property<vole::object>(L"Range", "H4");
+		range7.put_property(L"Formula", "Indicative Mature Height x Spread");
 		
 		vole::object range1 = excelApp.get_property<vole::object>(L"Range", "I4");
 		range1.put_property(L"Formula", "Quantity");
