@@ -323,7 +323,12 @@ private:
 		change_col_width(5, 9.25, worksheet);
 		change_col_width(6, 12, worksheet);
 		change_col_width(7, 9.25, worksheet);
-		change_col_width(8, 8.38, worksheet);
+		change_col_width(8, 9.25, worksheet);
+		change_col_width(9, 8.38, worksheet);
+
+		//object rows = worksheet.get_property<object>(L"Rows");
+		//object row = rows.get_property<object>(L"Item", row);
+		//row.put_property(L"RowHeight", width);
 
 		vole::object range = excelApp.get_property<vole::object>(L"Range", "B4");
 		range.put_property(L"Formula", "Code");
@@ -341,12 +346,15 @@ private:
 		range5.put_property(L"Formula", "No. per m2");
 
 		vole::object range4 = excelApp.get_property<vole::object>(L"Range", "G4");
-		range4.put_property(L"Formula", "Height");
+		range4.put_property(L"Formula", "Supplied Height");
+
+		vole::object range6 = excelApp.get_property<vole::object>(L"Range", "G4");
+		range6.put_property(L"Formula", "Indicative Mature Height x Spread");
 		
-		vole::object range1 = excelApp.get_property<vole::object>(L"Range", "H4");
+		vole::object range1 = excelApp.get_property<vole::object>(L"Range", "I4");
 		range1.put_property(L"Formula", "Quantity");
 		
-		object col_labels_range = excelApp.get_property<object>(L"Range", "B4:H4");
+		object col_labels_range = excelApp.get_property<object>(L"Range", "B4:I4");
 		object col_labels_font = col_labels_range.get_property<object>(L"Font");
 		col_labels_font.put_property(L"Bold", 1);
 
@@ -401,11 +409,11 @@ private:
 						object range7 = excelApp.get_property<object>(L"Range", range_str);
 						range7.put_property(L"Formula", (*database)[plant_it->first].pot_size);
 						//Quantity
-						swprintf(range_str, _T("H%d"), i);
+						swprintf(range_str, _T("I%d"), i);
 						object range2 = excelApp.get_property<object>(L"Range", range_str);
 						range2.put_property(L"Formula", plant_it->second);
 
-						swprintf(range_str, _T("B%d:H%d"), i, i);
+						swprintf(range_str, _T("B%d:I%d"), i, i);
 						object plant_range = excelApp.get_property<object>(L"Range", range_str);
 						object plant_border = plant_range.get_property<object>(L"Borders");
 
@@ -447,7 +455,7 @@ private:
 				object range2 = excelApp.get_property<object>(L"Range", range_str);
 				range2.put_property(L"Formula", plant_it->second);
 
-				swprintf(range_str, _T("B%d:H%d"), i, i);
+				swprintf(range_str, _T("B%d:I%d"), i, i);
 				object plant_range = excelApp.get_property<object>(L"Range", range_str);
 				object plant_border = plant_range.get_property<object>(L"Borders");
 
@@ -457,7 +465,7 @@ private:
 			}
 		}
 
-		swprintf(range_str, _T("B4:H%d"), i);
+		swprintf(range_str, _T("B4:I%d"), i);
 
 		object whole_range = excelApp.get_property<object>(L"Range", range_str);
 		object whole_border = whole_range.get_property<object>(L"Borders");
