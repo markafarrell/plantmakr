@@ -322,13 +322,13 @@ private:
 		change_col_width(4, 30, worksheet);
 		change_col_width(5, 9.25, worksheet);
 		change_col_width(6, 12, worksheet);
-		change_col_width(7, 9.25, worksheet);
-		change_col_width(8, 9.25, worksheet);
+		change_col_width(7, 11.15, worksheet);
+		change_col_width(8, 16, worksheet);
 		change_col_width(9, 8.38, worksheet);
 
-		//object rows = worksheet.get_property<object>(L"Rows");
-		//object row = rows.get_property<object>(L"Item", row);
-		//row.put_property(L"RowHeight", width);
+		object rows = worksheet.get_property<object>(L"Rows");
+		object row = rows.get_property<object>(L"Item", 3);
+		row.put_property(L"RowHeight", 29.25);
 
 		vole::object range = excelApp.get_property<vole::object>(L"Range", "B4");
 		range.put_property(L"Formula", "Code");
