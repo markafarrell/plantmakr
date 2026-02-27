@@ -315,6 +315,7 @@ private:
 		object tfont = titlerange.get_property<object>(L"Font");
 		tfont.put_property(L"Size", 14);
 		tfont.put_property(L"Bold", 1);
+		tfont.put_property(L"Name", "HelveticaNeue LT 47 LightCn");
 		
 		change_col_width(2, 8.4, worksheet);
 		change_col_width(3, 37.5, worksheet);
