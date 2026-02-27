@@ -1,7 +1,5 @@
-lib/stlsoft/*
 lib/ObjectArx/*
 lib/boost/*
-lib/vole/*
 !README
 
 ## Ignore Visual Studio temporary files, build results, and
