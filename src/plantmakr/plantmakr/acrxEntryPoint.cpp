@@ -327,7 +327,7 @@ private:
 		change_col_width(9, 8.38, worksheet);
 
 		object rows = worksheet.get_property<object>(L"Rows");
-		object row = rows.get_property<object>(L"Item", 3);
+		object row = rows.get_property<object>(L"Item", 4);
 		row.put_property(L"RowHeight", 29.25);
 
 		vole::object range = excelApp.get_property<vole::object>(L"Range", "B4");
